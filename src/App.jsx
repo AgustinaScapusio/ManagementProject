@@ -25,6 +25,7 @@ function App() {
       };
     });
 }
+
   function handleDeleteTask(id) {
     setProjectsState(prevState => {
       return {
