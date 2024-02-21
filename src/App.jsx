@@ -1,4 +1,4 @@
-import ProjectsSidebar   from "./components/ProjectsSidebar.jsx";
+import {ProjectsSideBar}   from "./components/ProjectsSideBar.jsx";
 import NewProject        from "./components/NewProject.jsx";
 import NoProjectSelected from "./components/NoProjectSelected.jsx";
 import {useState}          from "react";
@@ -93,7 +93,7 @@ function handleSelectProject(projectId) {
   }
   return (
     <main className={"h-screen my-8 flex gap-8"}>
-      <ProjectsSidebar onSelectProject={handleSelectProject} onStartAddProject={handleStartAddProject} projects={projectsState.projects} selectedProjectId={projectsState.selectedProjectId}/>
+      <ProjectsSideBar onSelectProject={handleSelectProject} onStartAddProject={handleStartAddProject} projects={projectsState.projects} selectedProjectId={projectsState.selectedProjectId}/>
       {content}
     </main>
   );
